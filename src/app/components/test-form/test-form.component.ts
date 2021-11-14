@@ -70,7 +70,7 @@ export class TestFormComponent implements OnInit {
 
     this.testService.getResult(userAnswer).subscribe(result => {
       this.evaluation = result.result;
-      alert(this.evaluation);
+      alert("Your evaluation is " + this.evaluation + "/" + this.answers.length);
       this.router.navigate(["/"]);
     });
     
